@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Страница контактов и форма обратной связи">
+    <meta name="keywords" content="контакты, форма, письмо, Сорокин Всеволод">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Контакты</title>
+    <link rel="icon" href="Images/icon.png" type="image/png">
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        .form-note {
+            color: #4b5563;
+            font-size: 14px;
+        }
+    </style>
+</head>
+<body id="top">
+<div class="site-wrapper">
+
+    <!-- Шапка страницы контактов -->
+    <header>
+        <h1>Сорокин Всеволод Максимович</h1>
+        <p>Связь со мной</p>
+    </header>
+
+    <!-- Меню сайта -->
+    <nav>
+        <a href="index.html">Главная</a>
+        <a href="Interests.html">Увлечения</a>
+        <a href="Contacts.html">Контакты</a>
+    </nav>
+
+    <!-- Основной контент страницы контактов -->
+    <main>
+        <h2>Написать мне</h2>
+        <p class="form-note">Заполните форму, чтобы отправить сообщение.</p>
+
+        <form action="#" method="post" enctype="multipart/form-data">
+            <p>
+                <label for="name">Имя отправителя:</label><br>
+                <input type="text" id="name" name="name" required>
+            </p>
+
+            <p>
+                <label for="email">Почтовый ящик отправителя:</label><br>
+                <input type="email" id="email" name="email" required>
+            </p>
+
+            <p>
+                <label for="phone">Телефон:</label><br>
+                <input type="tel" id="phone" name="phone" pattern="\+7[0-9]{10}" placeholder="+79090978232">
+            </p>
+
+            <fieldset>
+                <legend>Как обращаться к пользователю в дальнейшем?</legend>
+
+                <p>
+                    <input type="radio" id="male" name="appeal" value="Уважаемый">
+                    <label for="male">Уважаемый</label>
+                </p>
+
+                <p>
+                    <input type="radio" id="female" name="appeal" value="Уважаемая">
+                    <label for="female">Уважаемая</label>
+                </p>
+            </fieldset>
+
+            <p>
+                <label for="topic">Тематика письма:</label><br>
+                <select id="topic" name="topic">
+                    <option value="complaint">Жалоба</option>
+                    <option value="offer">Предложение</option>
+                    <option value="friendship">Дружба</option>
+                    <option value="project">Совместный проект</option>
+                    <option value="other">Другое</option>
+                </select>
+            </p>
+
+            <p>
+                <label for="message">Сообщение:</label><br>
+                <textarea id="message" name="message" rows="7" cols="40" required></textarea>
+            </p>
+
+            <p>
+                <label for="file">Прикрепить файл:</label><br>
+                <input type="file" id="file" name="file">
+            </p>
+
+            <p>
+                <input type="checkbox" id="agree" name="agree" required>
+                <label for="agree">Согласен на обработку персональных данных</label>
+            </p>
+
+            <p>
+                <button type="submit">Отправить письмо</button>
+            </p>
+        </form>
+    </main>
+
+    <!-- Подвал сайта -->
+    <footer>
+        <p>© 2026 Сорокин Всеволод Максимович</p>
+    </footer>
+
+</div>
+
+<a id="top-button" href="#top">↑</a>
+</body>
+</html>
