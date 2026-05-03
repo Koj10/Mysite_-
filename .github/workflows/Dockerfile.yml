@@ -15,4 +15,4 @@ jobs:
         uses: actions/checkout@v4
 
       - name: Build image
-        run: docker build -f .github/workflows/Dockerfile -t mysite:latest .
+        run: docker build -t mysite:latest .
