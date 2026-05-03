@@ -1,6 +1,5 @@
 .git
-.github
-.gitattributes
-Dockerfile
 .dockerignore
+Dockerfile
+docker-compose.yml
 *.md
